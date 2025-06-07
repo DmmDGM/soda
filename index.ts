@@ -19,7 +19,8 @@ const definitions = [
     source("1f070f").tween("ef8fbf", 13).tween("efcfdf", 6).define("pink"),
     source("0f0f0f").tween("7f7f7f", 13).tween("efefef", 6).define("mono")
 ];
-const output = `:root{${definitions.join("")}}`;
+const version = "v1.0.0";
+const output = `/* Soda ${version} @ DmmD GM */:root{${definitions.join("")}}`;
 
 // Writes file
 await Bun.write("soda.css", output);
